@@ -58,7 +58,7 @@ const Profile = () => {
           </ul>
           {page === "history" && <History />}
           {category === "widow" && page === "education" && <Education2 />}
-          {/* {page === "education" && <Education data={data} />} */}
+          {category === "street hawker" && page === "education" && <Education />}
           {page === "skills" && <Skills />}
           {page === "contact" && <Contact />}
         </div>

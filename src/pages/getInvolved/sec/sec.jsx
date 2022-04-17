@@ -1,4 +1,5 @@
 import './sec.scss';
+import { Link } from 'react-router-dom';
 
 const Sec = () => {
     return (
@@ -11,7 +12,7 @@ const Sec = () => {
                         <p className="headx">MAKE A DONATION</p>
                         <p className="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vel suspendisse aliquam eros ullamcorper praesent aliquet egestas imperdiet. Euismod gravida mauris, nunc tellus vestibulum. Lacinia morbi rhoncus viverra aliquet senectus nascetur accumsan. Feugiat et purus, sit lacus, phasellus cras pulvinar elementum congue.</p>
                         <div className="btn">
-                            <button className='one'>DONATE</button>
+                        <Link to="/donation"><button className='one'>DONATE</button></Link>
                             {/* <button className='two'>REQUEST AID</button> */}
                         </div>
                     </div>
@@ -25,7 +26,7 @@ const Sec = () => {
                         <p className="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac vel suspendisse aliquam eros ullamcorper praesent aliquet egestas imperdiet. Euismod gravida mauris, nunc tellus vestibulum. Lacinia morbi rhoncus viverra aliquet senectus nascetur accumsan. Feugiat et purus, sit lacus, phasellus cras pulvinar elementum congue.</p>
                         <div className="btn">
                             {/* <button className='one'>MAKE A DONATION</button> */}
-                            <button className='two'>VOLUNTEER</button>
+                            <Link to="/volunteer"><button className='two'>VOLUNTEER</button></Link>
                         </div>
                     </div>
                 </div>

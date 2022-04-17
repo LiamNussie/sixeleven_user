@@ -1,4 +1,5 @@
 import './hero.scss';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -8,8 +9,8 @@ const Hero = () => {
                     <h3 className="bold">Humanitarian services for child street hawkers and <br /> widow(er)s</h3>
                     <p className="para">Fostering an unstoppable generation</p>
                     <div className="btn">
-                        <button className='one'>GET INVOLVED</button>
-                        <button className='two'>REQUEST AID</button>
+                        <Link to="/get-involved"><button className='one'>GET INVOLVED</button></Link>
+                        <Link to="/request-aid"><button className='two'>REQUEST AID</button></Link>
                     </div>
                 </div>
             </div>

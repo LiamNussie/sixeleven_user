@@ -2,6 +2,7 @@ import Footer from '../../components/footer/footer';
 import WebHeader from '../../components/webHeader/webHeader';
 import './getInvolved.scss';
 import Sec from './sec/sec';
+import { Link } from 'react-router-dom';
 
 const GetInvolved = () => {
     return (
@@ -13,8 +14,8 @@ const GetInvolved = () => {
                         <h3 className="bold">Get Involved</h3>
                         <p className="para">Support and care for the less priviledged through education and other means of empowerment</p>
                         <div className="btn">
-                            <button className='one'>DONATE</button>
-                            <button className='two'>VOLUNTEER</button>
+                            <Link to="/donation"><button className='one'>DONATE</button></Link>
+                            <Link to="/volunteer"><button className='two'>VOLUNTEER</button></Link>
                         </div>
                     </div>
                 </div>

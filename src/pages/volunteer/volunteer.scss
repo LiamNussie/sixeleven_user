@@ -72,6 +72,11 @@
                         label {
                             font-weight: 600;
                             color: #03A1C6;
+
+                            span {
+                                color: crimson;
+                                margin-left: .4rem;
+                            }
                         }
                         input, 
                         textarea,

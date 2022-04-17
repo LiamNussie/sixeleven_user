@@ -4,6 +4,7 @@ import Fb from './fb.svg';
 import In from './in.svg';
 import Ln from './ln.svg';
 import Tw from './tw.svg';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -22,14 +23,14 @@ const Footer = () => {
                 <div className="rightf">
                     <ul className="links">
                         <li className='lab'>Company</li>
-                        <li>About Us</li>
-                        <li>Events</li>
-                        <li>Get Involved</li>
-                        <li>Contact Us</li>
+                        <Link style={{textDecoration: "none", color: "#414042"}} to="/about"><li>About Us</li></Link>
+                        <Link style={{textDecoration: "none", color: "#414042"}} to="/events"><li>Events</li></Link>
+                        <Link style={{textDecoration: "none", color: "#414042"}} to="/get-involved"><li>Get Involved</li></Link>
+                        <Link style={{textDecoration: "none", color: "#414042"}} to="/contact"><li>Contact Us</li></Link>
                     </ul>
                     <ul className="links">
                         <li className='lab'>Quick Links</li>
-                        <li>Careers</li>
+                        <Link style={{textDecoration: "none", color: "#414042"}} to="/career"><li>Careers</li></Link>
                         <li>Media</li>
                         <li>Privacy Policy</li>
                         <li>Terms & Conditions</li>

@@ -5,8 +5,8 @@ import { toast } from "react-toastify";
 const Payment = ({data}) => {
   const config = {
     referenceDate: new Date().getTime().toString(),
-    email: "liam@gmail.com",
-    amount: 5000 * 100,
+    email: data?.email,
+    amount: data?.amount * 100,
     publicKey: "pk_test_55383050203f3c68405b6cdd9d5a8c8629e8c93f",
   };
 

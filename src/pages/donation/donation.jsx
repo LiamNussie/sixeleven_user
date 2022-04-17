@@ -24,6 +24,15 @@ const Donation = () => {
         console.log(error)
     }
 
+    const datax = {
+        name,
+        email,
+        phone,
+        category,
+        event,
+        amount
+    }
+
 
     const handle = (e) => {
         e.preventDefault();
@@ -44,19 +53,19 @@ const Donation = () => {
                         <form onSubmit={handle}>    
                             <div className="input">
                                 <label>Name <span style={{color: "crimson"}}>*</span></label><br />
-                                <input placeholder='full name' type="text" />
+                                <input onChange={e => setName(e.target.value)} placeholder='full name' type="text" />
                             </div>
                             <div className="input">
                                 <label>Phone Number <span style={{color: "crimson"}}>*</span></label><br />
-                                <input placeholder='phone' type="email" />
+                                <input minLength={11} maxLength={11} onChange={e => setPhone(e.target.value)} placeholder='phone' type="email" />
                             </div>
                             <div className="input">
                                 <label>Email <span style={{color: "crimson"}}>*</span></label><br />
-                                <input placeholder='email address' type="email" />
+                                <input onChange={e => setEmail(e.target.value)} placeholder='email address' type="email" />
                             </div>
                             <div className="input">
                                 <label>Which applies to you? <span style={{color: "crimson"}}>*</span></label><br />
-                                <select>
+                                <select onChange={e => setCategory(e.target.value)}>
                                     <option selected disabled>Select</option>
                                     <option value="individual">I am an Individual</option>
                                     <option value="organization">I am an Organization</option>
@@ -65,7 +74,7 @@ const Donation = () => {
                             
                             <div className="input">
                                 <label>Choose event to donate to <span style={{color: "crimson"}}>*</span></label><br />
-                                <select>
+                                <select onChange={e => setEvent(e.target.value)}>
                                     <option selected disabled>Select event</option>
                                     {!isLoading && 
                                     data?.data?.result.map(({name}, index) => {
@@ -79,10 +88,10 @@ const Donation = () => {
                            
                             <div className="input">
                                 <label>How much do you want to donate? <span style={{color: "crimson"}}>*</span></label><br />
-                                <input type="tel" />
+                                <input onChange={e => setAmount(e.target.value)} type="tel" />
                             </div>
                             
-                             <Payment />
+                             <Payment data={datax} />
                         </form>
                     </div>
                 </div>

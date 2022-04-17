@@ -1,4 +1,5 @@
 import './involved.scss';
+import { Link } from 'react-router-dom';
 
 const Involved = () => {
     return (
@@ -9,8 +10,8 @@ const Involved = () => {
                         <p className="head">Get Involved</p>
                         <p className="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus consequat a et sagittis, nisi, nisi. Pretium nunc dui gravida et ac enim nullam neque. Fermentum mollis massa massa lectus dolor faucibus mi. Platea arcu enim, quam libero.</p>
                         <div className="btn">
-                            <button className='one'>DONATE</button>
-                            <button className='two'>VOLUNTEER</button>
+                            <Link to="/donation"><button className='one'>DONATE</button></Link>
+                            <Link to="/volunteer"><button className='two'>VOLUNTEER</button></Link>
                         </div>
                     </div>
                 </div>
