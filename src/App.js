@@ -26,6 +26,8 @@ import Volunteer from './pages/volunteer/volunteer';
 import Donation from './pages/donation/donation';
 import RequestAid from './pages/requets-flow/requestAid/requestAid';
 import Profile from './pages/signup/profile/profile';
+import Category from './pages/requets-flow/category/category';
+import Conditional from './pages/requets-flow/category/conditional/conditional';
 
 
 const state = store.getState();
@@ -72,6 +74,8 @@ function App() {
         <Route exact path="/volunteer" component={Volunteer} />
         <Route exact path="/donation" component={Donation} />
         <Route exact path="/request-aid" component={RequestAid} />
+        <Route exact path="/request-aid/category" component={Category} />
+        <Route exact path="/request-aid/category/create" component={Conditional} />
         <ProtectedRoute exact path="/user/dashboard" component={Profile} />
         <Route path="/" component={Home} />
       </Switch>

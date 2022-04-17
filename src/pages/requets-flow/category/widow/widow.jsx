@@ -1,12 +1,10 @@
-import './requestAid.scss'; 
-import { Link } from 'react-router-dom';
-import WebHeader from '../../../components/webHeader/webHeader';
-import states from '../../../utils/states';
-import { useState } from 'react';
-import states2 from '../../../utils/statelga';
-import { useHistory } from 'react-router-dom/cjs/react-router-dom.min';
+import { useState } from "react";
+import states2 from "../../../../utils/statelga";
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
+import './widow.scss'
 
-const RequestAid = () => {
+const Widow = () => {
     const [tempModel, setTempModel] = useState([]);
     const [state, setState] = useState("");
     const [lga, setLga] = useState("");
@@ -22,8 +20,9 @@ const RequestAid = () => {
     const [password, setPassword] = useState("");
     const [cPassword, setCPassword] = useState("");
 
-    const history = useHistory();
+    const history = useHistory()
 
+    
     const selectState = (e) => {
         setState(e.target.value);
         setTempModel(states2.find((i) => i.state === e.target.value).lgas);
@@ -32,37 +31,23 @@ const RequestAid = () => {
         setLga(e.target.value);
       };
 
-      const data = {
-          name,
-          gender,
-          dob,
-          phone,
-          address,
-          image,
-          email,
-          password,
-          state,
-          lga
-      }
-
+      
       const handleSubmit = (e) => {
-          e.preventDefault();
-          history.push("/request-aid/category", {data: data})
-      }
-    
-    return (
-        <div className="request-aid">
-            <WebHeader />
+        e.preventDefault();
+        // history.push("/request-aid/category", {data: data})
+    }
 
-            <div className="cont">
+  return (
+    <div className="widow">
+        <div className="cont">
                 <Link to="/home" style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>Back</p></Link>
                 <div className="flexo">
                     <div className="left">
                         <div className="img"></div>
                     </div>
                     <div className="right">
-                        <p className="title">Create an account</p>
-                        <p className="para">Hi there. Please provide your information below to create a profile with us</p>
+                        <p className="title">Widow Profile</p>
+                        <p className="para">Hi there. Please provide these additional information below to create a profile with us</p>
                         <form onSubmit={handleSubmit}>    
                             <div className="input">.
                                 <label>Name <span style={{color: "crimson"}}>*</span></label><br />
@@ -135,8 +120,8 @@ const RequestAid = () => {
                     </div>
                 </div>
             </div>
-        </div>
-    )
+    </div>
+  )
 }
 
-export default RequestAid;
+export default Widow;

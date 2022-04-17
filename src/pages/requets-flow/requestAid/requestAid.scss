@@ -67,6 +67,14 @@
 
                     .input {
                         margin-bottom: 1.5rem;
+                        position: relative;
+
+                        i {
+                            position: absolute;
+                            top: 45%;
+                            right: 3%;
+                            color: #03A1C6;
+                        }
     
                         label {
                             font-weight: 600;
