@@ -1,0 +1,87 @@
+.security {
+    height: 80vh;
+
+    .titlep {
+        color: #414042;
+        font-weight: 600;
+        font-size: 18px;
+        margin-bottom: 1.5rem;
+    }
+
+    .prof-img {
+        display: flex;
+        align-items: center;
+
+        button {
+            background: #F9F9F9;
+            border: 1px solid #AAC5CC;
+            box-sizing: border-box;
+            border-radius: 4px;
+            outline: none;
+            padding: 4px 8px;
+            color: #414042;
+        }
+
+        .img {
+            width: 90px;
+            height: 90px;
+            background-color: #414042;
+            margin-right: 2.5rem;
+            border-radius: 8px;
+        }
+    }
+
+    form {
+        margin-top: 2rem;
+
+        .btns {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+
+            button {
+                margin-top: 5px;
+                border: none;
+                cursor: pointer;
+                padding: 10px 16px;
+                color: #FEFEFE;
+                background: #03A1C6;
+                border-radius: 5px;
+                transition: 250ms ease;
+        
+                &:hover {
+                    background-color: #00728c;
+                }
+            }
+            .cancel {
+                margin-top: 5px;
+                border: none;
+                cursor: pointer;
+                padding: 10px 16px;
+                background: #FEFEFE;
+                color: #03A1C6;
+                border-radius: 5px;
+                border: 1px solid #03A1C6;
+                transition: 250ms ease;
+            }
+        }
+
+        .input {
+            margin-bottom: 1rem;
+
+            label {
+                color: #828282;
+            }
+            input,
+            select {
+                margin-top: .4rem;
+                width: 100%;
+                background: #fefefe;
+                border: 0.5px solid #aac5cc;
+                box-sizing: border-box;
+                border-radius: 6px;
+                padding: 16px;
+            }
+        }
+    }
+}

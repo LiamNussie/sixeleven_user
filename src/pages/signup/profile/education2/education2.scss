@@ -1,0 +1,75 @@
+.education2 {
+    padding: 1.5rem 2rem;
+
+    .first {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        flex-wrap: wrap;
+
+        .pt {
+            .label {
+                color: #AAC5CC;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            .val {
+                color: #414042;
+            }
+        }
+    }
+    .secio {
+        margin-top: 2rem;
+        
+
+        .sub-title {
+            margin-bottom: 12px;
+            color: #AAC5CC;
+            font-weight: 500;
+
+            svg {
+                margin-right: 5px;
+                transform: translateY(4px);
+            }
+        }
+        .val {
+            color: #414042;
+            font-weight: 500;
+        }
+        .files {
+            margin-top: 7px;
+            padding-bottom: 1rem;
+            border-bottom: 0.5px solid #AAC5CC;
+
+            .filex {
+                background: #F9F9F9;
+                border-radius: 4px;
+                display: flex;
+                padding: 1rem;
+                margin-bottom: 10px;
+                align-items: center;
+                justify-content: space-between;
+
+                .left {
+                    display: flex;
+                    gap: 7px;
+                    align-items: center;
+
+                    .txt {
+                        .top {
+                            margin-bottom: 5px;
+                            color: #414042;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                        .bottom {
+                            color: #828282;
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+.view-job {
+    padding: 2rem;
+
+    .back {
+        color: #414042;
+        font-weight: 600;
+        cursor: pointer;
+
+        i {
+            margin-right: 10px;
+            color: #414042;
+            transform: translateY(1px);
+        }
+    }
+
+    .cont {
+        background-color: #fff;
+        margin-top: 1rem;
+        padding: 1rem;
+        border-radius: 6px;
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        justify-content: space-between;
+
+        .rightz {
+            width: 30%;
+            // background-color: green;
+
+            .headz {
+                color: #828282;
+                border-bottom: 2px solid #03A1C6;
+                padding-bottom: 3px;
+                width: max-content;
+                margin-bottom: 1.5rem;
+                font-weight: 600;
+            }
+
+            .candidates {
+                line-height: 1.6;
+                margin-left: 1rem;
+
+                li {
+                    color: #414042;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .leftz {
+            position: relative;
+            width: 70%;
+            border-right: 1px solid #E0E0E0;
+            // background-color: red;
+
+            img {
+                position: absolute;
+                right: 4%;
+                top: 4%;
+                cursor: pointer;
+            }
+            .modal {
+                position: absolute;
+                right: 4%;
+                top: 7%;
+                width: 220px;
+                border-radius: 8px;
+                border: 1px solid rgb(213, 213, 213);
+                background-color: #FEFEFE;
+
+                li {
+                    list-style: none;
+                    padding: 1rem;
+                    font-weight: 600;
+                    color: #414042;
+                }
+                .delete {
+                    color: #EB5757 !important;
+                    border-top: 1px solid rgb(224, 224, 224);
+                }
+            }
+
+            .title {
+                font-weight: 600;
+                font-size: 22px;
+    
+                span {
+                    font-size: 16px;
+                    color: #03A1C6;
+                    margin-left: 4px;
+                }
+            }
+            .status {
+                margin-top: 24px;
+    
+                .closed {
+                padding: 5px 15px;
+                width: fit-content;
+                border-radius: 6px;
+                background-color: #F2F2F2;
+                color: #828282 !important;
+            }
+            .open {
+                padding: 5px 15px;
+                width: fit-content;
+                border-radius: 6px;
+                background-color: #F5FBFD !important;
+                color: #57C0D9 !important;
+            }
+            }
+    
+            .desc {
+                .rtitle {
+                    margin-bottom: .7rem;
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        
+        
+    }
+}

@@ -1,0 +1,184 @@
+.view-request {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    margin: 1rem;
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .back {
+            color: #414042;
+            font-weight: 600;
+            cursor: pointer;
+
+            i {
+                margin-right: 10px;
+                color: #414042;
+                transform: translateY(1px);
+            }
+        }
+
+        .btns {
+
+            button {
+                margin: 0 6px;
+                padding: 10px;
+                border-radius: 4px;
+                color: #fff;
+                font-weight: 500;
+                outline: none;
+                border: none;
+                cursor: pointer;
+            }
+            
+        }
+    }
+
+    .prof-line {
+        display: flex;
+        margin-top: 3rem;
+        gap: 20px;
+        align-items: center;
+
+        .img {
+            height: 50px;
+            width: 50px;
+            border-radius: 6px;
+            // background-image: url(./pic.svg);
+            background-size: cover;
+        }
+        .name {
+            font-weight: 600;
+            font-size: 22px;
+        }
+        .view {
+            font-weight: 600;
+            font-size: 15px;
+            color: #03A1C6;
+            cursor: pointer;
+        }
+    }
+
+    .info {
+        display: flex;
+        margin-top: 2rem;
+        color: #414042;
+        align-items: center;
+        padding-bottom: 2rem;
+        border-bottom: 0.5px solid #AAC5CC;
+        justify-content: space-between;
+    }
+
+    .reason {
+        margin-top: 1.3rem;
+        padding-bottom: 2rem;
+        border-bottom: 0.5px solid #AAC5CC;
+
+        .title {
+             color: #AAC5CC;
+            font-weight: 600;
+        }
+        .r-txt {
+            margin-top: .7rem;
+            padding: 1rem 1rem 3rem 1rem;
+            border-radius: 6px;
+            line-height: 1.6;
+            font-weight: 600;
+            color: #414042;
+            border: 0.5px solid #AAC5CC;
+        }
+       
+    }
+
+    .skills {
+
+        .title {
+            margin-top: 1.5rem;
+            font-size: 18px;
+            color: #414042;
+            font-weight: 600;
+        }
+        .sec {
+            margin: 1.2rem 0;
+
+            .sub-title {
+                margin-bottom: 12px;
+                color: #AAC5CC;
+                font-weight: 600;
+
+                svg {
+                    margin-right: 5px;
+                    transform: translateY(4px);
+                }
+            }
+            .val {
+                color: #414042;
+                font-weight: 600;
+            }
+            .files {
+                margin-top: 7px;
+                padding-bottom: 1rem;
+                border-bottom: 0.5px solid #AAC5CC;
+
+                .filex {
+                    background: #F9F9F9;
+                    border-radius: 4px;
+                    display: flex;
+                    padding: 1rem;
+                    margin-bottom: 10px;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .left {
+                        display: flex;
+                        gap: 7px;
+                        align-items: center;
+
+                        .txt {
+                            .top {
+                                margin-bottom: 5px;
+                                color: #414042;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                            .bottom {
+                                color: #828282;
+                                font-size: 14px;
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        
+    }
+    .contact {
+        margin-top: 1.5rem;
+
+        .title {
+           font-size: 18px;
+           color: #414042;
+           font-weight: 600;
+        }
+        .referee {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .opt {
+                color: #828282;
+                margin: 1rem 0;
+                flex: 1 1 400px;
+
+                strong {
+                    color: #414042;
+                }
+            }
+        }
+   }
+}

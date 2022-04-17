@@ -1,0 +1,88 @@
+.view-donation {
+    padding: 2rem;
+
+    .back {
+        color: #414042;
+        font-weight: 600;
+        cursor: pointer;
+
+        i {
+            margin-right: 10px;
+            color: #414042;
+            transform: translateY(1px);
+        }
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+
+        .dir {
+            color: #AAC5CC;
+            font-weight: 500;
+            font-size: 22px;
+
+            svg {
+                margin: 0 15px;
+            }
+        }
+        span {
+            color: #414042;
+            font-weight: 600;
+            font-size: 22px;
+        }
+    }
+
+    .box {
+        margin-top: 1.5rem;
+        background: #F9F9F9;
+        border: 1px dashed #57C0D9;
+        box-sizing: border-box;
+        border-radius: 8px;
+        padding: 1.5rem 2.3rem;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        .left {
+            line-height: 3;
+
+            .label {
+                color: #828282;
+
+                strong {
+                    color: #414042;
+                }
+
+                .name {
+                    font-size: 1.3rem;
+                    color: #03A1C6;
+                }
+            }
+        }
+        .rightd {
+            
+            .boxi {
+                background-color: #FEFEFE;
+                border-radius: 8px;
+                text-align: center;
+                width: 300px;
+                margin-bottom: 1rem;
+                padding: 1rem;
+        
+                .val {
+                    margin-bottom: 10px;
+                    color: #03A1C6;
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+                .label {
+                    color: #828282;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

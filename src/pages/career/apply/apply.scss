@@ -1,0 +1,94 @@
+.apply {
+    background-color: #FEFEFE;
+
+    .content {
+        padding: 3rem;
+
+        .back {
+            color: #414042;
+            font-weight: 600;
+            cursor: pointer;
+    
+            i {
+                margin-right: 10px;
+                color: #414042;
+                transform: translateY(1px);
+            }
+        }
+
+        .sect {
+            padding: 0 6rem;
+
+            .titleo {
+                margin-bottom: 1.5rem;
+                margin-top: 2rem;
+        
+                .title-txtxt {
+                    padding-bottom: .3rem;
+                    border-bottom: 3px solid #03A1C6;
+                    width: fit-content;
+                    color: #414042;
+                }
+            }
+
+            .jtitle {
+                margin-bottom: 1rem;
+                color: #414042;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+            .para {
+                color: #414042;
+            }
+            form {
+                max-width: 700px;
+                margin: 2rem auto 1rem auto;
+
+                button {
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    width: 100%;
+                    border-radius: 4px;
+                    padding: 1rem;
+                    background: #03A1C6;
+                    cursor: pointer;
+                    letter-spacing: .1em;
+                    font-weight: 600;
+                    font-family: projFont;
+                    margin-top: 1rem;
+                    transition: 250ms ease;
+
+                    &:hover {
+                        background-color: #0084a2;
+                    }
+                }
+
+                .input {
+                    margin-bottom: 1.5rem;
+
+                    label {
+                        font-weight: 600;
+                    }
+                    input, 
+                    textarea {
+                        padding: 1rem;
+                        width: 100%;
+                        margin-top: .5rem;
+                        outline: none;
+                        background: #FEFEFE;
+                        border: 0.5px solid #AAC5CC;
+                        box-sizing: border-box;
+                        border-radius: 6px;
+
+                        &::placeholder {
+                            color: #848484;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}

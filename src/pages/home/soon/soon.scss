@@ -1,0 +1,56 @@
+.soon {
+    background: #F5FBFD;
+    padding: 4rem 7rem;
+
+    .title {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .title-txt {
+            padding-bottom: .4rem;
+            border-bottom: 3px solid #03A1C6;
+            width: fit-content;
+            margin: 0 auto;
+            color: #414042;
+            font-size: 1.7rem;
+        }
+    }
+
+    .flex {
+        display: flex;
+        gap: 1.2rem;
+
+        .box {
+            flex: 1 1 365px;
+            border-radius: 10px;
+            height: 340px;
+            border: 0.5px solid #03A1C6;
+
+            .img {
+                height: 55%;
+                border-radius: 10px 10px 0 0;
+                background-color: rgb(184, 184, 184);
+                background-image: url(./image.svg);
+                background-size: cover;
+            }
+            .txt {
+                background-color: #FEFEFE;
+                height: 45%;
+                border-radius: 0 0 10px 10px;
+                padding: 2rem 1rem;
+
+                .name {
+                    margin-bottom: 1rem;
+                    color: #026B84;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                }
+                .info {
+                    color: #414042;
+                    line-height: 20px;
+                }
+            }
+        }
+    }
+
+}

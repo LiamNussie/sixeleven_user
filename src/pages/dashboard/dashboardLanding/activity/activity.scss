@@ -1,0 +1,83 @@
+.activity {
+        background: #FEFEFE;
+        border-radius: 75px 0px 0px 0px;
+        width: 300px;
+        height: 110vh;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 7px;
+        padding: 3rem 1rem;
+        overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+        .title {
+            font-size: 18px;
+            color: #414042;
+            font-weight: 700;
+            padding: 0 2rem 1rem 2rem;
+            margin-bottom: 30px;
+            border-bottom: 0.5px solid #bfd0d5;
+        }
+
+        .list {
+            
+
+            .item {
+                padding: 1rem;
+                border-radius: 10px;
+                margin-top: 15px;
+    
+                .top {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 15px;
+    
+                    .type {
+                        font-size: 14px;
+                        color: #414042;
+    
+                        span {
+                            margin-right: 7px;
+                            padding: 4px 8px;
+                            border-radius: 6px;
+                            color: #FEFEFE;
+                            font-size: 14px
+                        }
+                        #don {
+                            background-color: #FE4365;
+                        }
+                        #req {
+                            background-color: #03A1C6;
+                        }
+                    }
+                    .time {
+                        color: #414042;
+                        font-size: 12px;
+                    }
+                }
+    
+                .text {
+                    font-size: 14px;
+                    line-height: 1.4;
+                    color: #414042;
+    
+                    span {
+                        color: #FE4365;
+                    }
+                }
+            }
+            .donation {
+                background-color: #FEF8F9;
+            }
+            .request {
+                background-color: #F5FBFD;
+            }
+        }
+
+        
+}

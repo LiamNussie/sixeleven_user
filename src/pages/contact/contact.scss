@@ -1,0 +1,137 @@
+.contact {
+
+    .banner {
+        display: flex;
+        height: 200px;
+        background-color: #03A1C6;
+        align-items: center;
+
+        .txt {
+            margin: 0 auto;
+            color: #FEFEFE;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+    }
+    .bottom {
+        padding: 3rem 5rem;
+        background-color: #FEFEFE;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .left {
+            flex: 1 1 300px;
+            .titlec {
+                color: #026B84;
+                font-weight: 600;
+                font-size: 1.3rem;
+                margin-bottom: .7rem;
+            }
+            .it {
+                color: #414042;
+                margin-bottom: .5rem;
+            }
+            .address {
+                font-size: .9rem;
+                color: #828282;
+                margin-bottom: .7rem;
+            }
+            .phones {
+                color: #414042;
+                font-size: .9rem;
+                margin-bottom: 1.3rem;
+            }
+            .socials {
+                color: #828282;
+            }
+            .icons {
+                margin-top: .9rem;
+                img {
+                  margin-right: .9rem;
+                  cursor: pointer;
+                  transition: 250ms ease;
+        
+                  &:hover {
+                    transform: scale(0.9);
+                  }
+                }
+              }
+        }
+        .right {
+            flex: 1 1 600px;
+            form {
+                padding: 2rem;
+                background-color: #F9F9F9;
+
+                button {
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    border-radius: 5px;
+                    padding: 14px;
+                    width: 40%;
+                    background: #03A1C6;
+                    cursor: pointer;
+                    font-weight: 600;
+                    font-family: projFont;
+                  }
+
+                .input {
+                    margin-bottom: 1rem;
+                    label {
+                        color: #03A1C6;
+                        font-weight: 600;
+                    }
+                    input, 
+                    textarea {
+                        margin-top: .8rem;
+                        width: 100%;
+                        background: #FEFEFE;
+                        border: 0.5px solid #AAC5CC;
+                        box-sizing: border-box;
+                        border-radius: 6px;
+                        padding: 1rem;
+
+                        &:placeholder {
+                            font-family: projFont;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .nxt {
+        .about-usx {
+            padding: 3rem 7rem;
+            background-color: #FEFEFE;
+    
+            .title {
+                text-align: center;
+                margin-bottom: 2rem;
+        
+                .title-txt {
+                    padding-bottom: .4rem;
+                    border-bottom: 3px solid #03A1C6;
+                    width: fit-content;
+                    margin: 0 auto;
+                    color: #414042;
+                    font-size: 1.7rem;
+                }
+            }
+    
+            .parabout {
+                font-size: 1rem;
+                color: #414042;
+            }
+            
+            .about-map {
+                background-image: url(./map.svg);
+                background-size: cover;
+                margin: 1.5rem 0;
+                height: 400px;
+                border-radius: 8px;
+            }
+        }
+    }
+}

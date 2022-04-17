@@ -1,0 +1,116 @@
+.sidebar {
+    height: 100vh;
+    width: 280px;
+    background-color: #fff;
+    position: fixed;
+    padding: 2rem;
+
+    .logo {
+
+    }
+
+    .active {
+        color: #03A1C6 !important;
+
+        svg {
+            stroke: #03A1C6 !important;
+        }
+    }
+
+    .navs {
+        color: rgb(62, 62, 62);
+        margin-top: 50px;
+        border-bottom: 1px solid #AAC5CC;
+
+        .nav-mini {
+
+            .nav-minix {
+                list-style: disc;
+                margin-left: 80px;
+                display: block;
+                text-decoration: none;
+                color: #4F4F4F;
+                margin-bottom: 20px;
+                font-weight: 600;
+
+                &:hover {
+                    color: #03A1C6 !important;
+                    
+                }
+
+                i {
+                    font-size: .1em;
+                    transform: translateY(-2px);
+                    margin-right: 10px;
+                }
+            }
+
+        }
+
+        .nav {
+            font-weight: 600;
+            list-style: none;
+            margin: 30px 0;
+            display: block;
+            cursor: pointer;
+            transition: 250ms ease; 
+            text-decoration: none;
+            color: #4F4F4F;
+
+            svg {
+                transform: translateY(8px);
+                margin-right: 15px;
+                stroke: #4F4F4F;
+                transition: 250ms ease;
+            }
+
+            &:hover {
+                color: #03A1C6 !important;
+                svg {
+                    stroke: #03A1C6 !important;
+                }
+                
+            }
+
+            .angle {
+                transform: translateY(3px);
+                margin-left: 10px;
+                transition: 250ms ease;
+            }
+
+            .expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+    .navs2 {
+        color: rgb(62, 62, 62);
+
+        .nav {
+            font-weight: 600;
+            list-style: none;
+            margin: 20px 0;
+            cursor: pointer;
+            display: block;
+            transition: 250ms ease;
+            text-decoration: none;
+            color: #4F4F4F;
+
+            svg {
+                transform: translateY(8px);
+                margin-right: 15px;
+                stroke: #4F4F4F !important;
+                transition: 250ms ease;
+            }
+
+            &:hover {
+                color: #03A1C6 !important;
+                svg {
+                    stroke: #03A1C6 !important;
+                }
+                
+            }
+            
+        }
+    }
+}

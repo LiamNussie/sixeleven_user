@@ -1,0 +1,173 @@
+.mission {
+    background: #F9F9F9;
+    padding: 4rem 7rem;
+
+    .title {
+        text-align: center;
+        margin-bottom: 3rem;
+
+        .title-txt {
+            padding-bottom: .4rem;
+            border-bottom: 3px solid #03A1C6;
+            width: fit-content;
+            margin: 0 auto;
+            color: #414042;
+            font-size: 1.7rem;
+        }
+    }
+
+    .flex1 {
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+        margin-bottom: 4rem;
+
+        .leftm,
+        .rightm {
+            flex: 1 1 50%;
+            height: 50vh;
+        }
+
+        .leftm {
+            background-image: url(./img1.svg);
+            background-size: cover;
+            border-radius: 8px;
+            
+        }
+        .rightm {
+            border-radius: 8px;
+            display: flex; 
+            align-items: center;
+
+            .content {
+                .head {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.015em;
+                    color: #012028;
+                    margin-bottom: .7rem;
+                }
+                .para {
+                    line-height: 26px;
+                    color: #414042;
+                }
+                .btn {
+                    margin-top: 1rem;
+    
+                    .one {
+                        outline: none;
+                        border: none;
+                        color: #fff;
+                        border-radius: 4px;
+                        padding: 14px 32px;
+                        background: #03A1C6;
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-family: projFont;
+                        margin-right: 10px;
+                        transition: 250ms ease;
+    
+                        &:hover {
+                            background-color: #0084a2;
+                        }
+                      }
+                    .two {
+                        outline: none;
+                        border: none;
+                        color: #03A1C6;
+                        border-radius: 4px;
+                        border: 1px solid #03A1C6;
+                        padding: 14px 32px;
+                        background: #FEFEFE;
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-family: projFont;
+                        transition: 250ms ease;
+    
+                        &:hover {
+                            background-color: #03A1C6;
+                            border: none;
+                            color: #fff;
+                        }
+                      }
+                }
+            }
+        }
+    }
+    .flex2 {
+        display: flex;
+        width: 100%;
+        gap: 3rem;
+
+        .leftm,
+        .rightm {
+            flex: 1 1 50%;
+            height: 50vh;
+        }
+
+        .leftm {
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+
+            .content {
+                .head {
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    letter-spacing: 0.015em;
+                    color: #012028;
+                    margin-bottom: .7rem;
+                }
+                .para {
+                    line-height: 26px;
+                    color: #414042;
+                }
+                .btn {
+                    margin-top: 1rem;
+    
+                    .one {
+                        outline: none;
+                        border: none;
+                        color: #fff;
+                        border-radius: 4px;
+                        padding: 14px 32px;
+                        background: #03A1C6;
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-family: projFont;
+                        margin-right: 10px;
+                        transition: 250ms ease;
+    
+                        &:hover {
+                            background-color: #0084a2;
+                        }
+                      }
+                    .two {
+                        outline: none;
+                        border: none;
+                        color: #03A1C6;
+                        border-radius: 4px;
+                        border: 1px solid #03A1C6;
+                        padding: 14px 32px;
+                        background: #FEFEFE;
+                        cursor: pointer;
+                        font-weight: 600;
+                        font-family: projFont;
+                        transition: 250ms ease;
+    
+                        &:hover {
+                            background-color: #03A1C6;
+                            border: none;
+                            color: #fff;
+                        }
+                      }
+                }
+            }
+        }
+        .rightm {
+            background-image: url(./img2.svg);
+            background-size: cover;
+            border-radius: 8px;
+        }
+    }
+}

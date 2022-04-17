@@ -1,0 +1,99 @@
+.view-volunteers {
+    padding: 2rem;
+
+    .back {
+        color: #414042;
+        font-weight: 600;
+        cursor: pointer;
+
+        i {
+            margin-right: 10px;
+            color: #414042;
+            transform: translateY(1px);
+        }
+    }
+
+    .view {
+        background-color: #fff;
+        padding: 1.7rem 4rem;
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: .5rem;
+
+            .name {
+                font-size: 22px;
+                font-weight: 500;
+                color: #03A1C6;
+            }
+
+            .btns {
+
+                button {
+                    outline: none;
+                    border: none;
+                    border-radius: 5px;
+                    padding: 10px;
+                    cursor: pointer;
+                    font-weight: 500;
+                    font-family: projFont;
+                    color: #fff;
+                    transition: 250ms ease;
+    
+                }
+                .approve {
+                    background-color: #2DA879;
+                    margin-left: .8rem;
+                }
+                .deny {
+                    background-color: #EB5757;
+                }
+            }
+        }
+
+        .cont {
+            border-top: 1px solid #E0E0E0;
+            margin-top: 1rem;
+            padding: 1rem;
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+            justify-content: space-between;
+    
+            .rightz {
+                width: 50%;
+                padding-left: 3rem;
+                border-left: 1px solid #E0E0E0;
+                .mtitle {
+                    color: #828282;
+                    margin-bottom: 1rem;
+                    margin-top: .8rem;
+                }
+                .motive {
+                    color: #414042;
+                }
+            }
+    
+            .leftz {
+               line-height: 2.8;
+               
+
+               .label {
+                   color: #828282;
+               }
+
+               .val {
+                color: #414042;
+               }
+    
+            }
+    
+            
+            
+        }
+    }
+
+    
+}

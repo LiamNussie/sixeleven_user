@@ -1,0 +1,51 @@
+@font-face {
+    font-family: projFont;
+    src: url(../../../../font/Noir-pro/NoirPro-Light.otf);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: #FEFEFE;
+    align-items: center;
+
+    img {
+
+    }
+
+    .middle {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        li {
+            list-style: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #414042;
+            transition: 250ms ease;
+        }
+        .active {
+            padding-bottom: .2rem;
+            border-bottom: 2px solid #03A1C6;
+            color: #03A1C6;
+        }
+    }
+
+    .right {
+
+        button {
+          outline: none;
+          border: none;
+          color: #fff;
+          border-radius: 6px;
+          padding: 12px 32px;
+          background: #03A1C6;
+          cursor: pointer;
+          font-weight: 600;
+          font-family: projFont;
+        }
+
+    }
+}

@@ -1,0 +1,31 @@
+.event {
+    .heroa {
+        height: 55vh;
+        background-color: gray;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        background-image: url(./bg.svg);
+        background-size: cover;
+        
+
+        .cont {
+            padding: 4rem;
+            color: #FEFEFE;
+            margin: 0 auto;
+            text-align: center;
+
+            .topt {
+                width: 520px;
+                font-size: 3rem;
+                margin-bottom: 1rem;
+                text-shadow: 2px 2px 8px #2a2a2a;
+            }
+            .parat {
+                font-size: 20px;
+                width: 600px;
+                line-height: 1.5;
+            }
+        }
+    }
+}

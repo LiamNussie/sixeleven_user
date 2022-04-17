@@ -1,0 +1,32 @@
+.notifs {
+    height: 100vh;
+    padding-right: 3rem;
+
+    .cont {
+        padding: 2rem 3.5rem;
+        background: #F9F9F9;
+        border: 1px solid #AAC5CC;
+        box-sizing: border-box;
+        border-radius: 10px;
+
+        .titlen {
+            color: #414042;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 2rem;
+        }
+
+        .input {
+            margin-bottom: 1rem;
+
+            input {
+                transform: scale(1.7);
+            }
+
+            label {
+                margin-left: 1rem;
+                color: #414042;
+            }
+        }
+    }
+}

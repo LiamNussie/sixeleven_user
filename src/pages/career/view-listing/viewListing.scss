@@ -1,0 +1,72 @@
+.view-listing {
+
+    .content {
+        padding: 3rem;
+        background-color: #FEFEFE;
+
+        .back {
+            color: #414042;
+            font-weight: 600;
+            cursor: pointer;
+
+            i {
+                margin-right: 10px;
+                color: #414042;
+                transform: translateY(1px);
+            }
+        }
+
+        .post {
+            padding: 3rem 6rem;
+
+            .jtitle {
+                margin-bottom: 1rem;
+                color: #414042;
+                font-size: 1.5rem;
+                font-weight: 600;
+
+                span {
+                    font-size: 1rem;
+                    color: #0084a2;
+                }
+            }
+
+            button {
+                outline: none;
+                border: none;
+                color: #fff;
+                border-radius: 4px;
+                padding: 14px 32px;
+                background: #03A1C6;
+                cursor: pointer;
+                font-weight: 600;
+                font-family: projFont;
+                margin-right: 10px;
+                transition: 250ms ease;
+                margin-top: 1.2rem;
+
+                &:hover {
+                    background-color: #0084a2;
+                }
+            }
+
+            .role {
+                margin-top: 2rem;
+
+                .title {
+                    font-weight: 600;
+                    margin-bottom: .7rem;
+                }
+                .desc {
+                    color: #414042;
+                    line-height: 1.5;
+                }
+                .points {
+                    color: #414042;
+                    margin-left: 1.5rem;
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}
