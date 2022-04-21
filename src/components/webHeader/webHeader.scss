@@ -35,6 +35,11 @@
 
     .right {
 
+        img {
+            display: none;
+            cursor: pointer;
+        }
+
         button {
           outline: none;
           border: none;
@@ -47,5 +52,25 @@
           font-family: projFont;
         }
 
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .web-header {
+        .middle {
+            display: none;
+        }
+        .right {
+
+            img 
+            {
+                display: block;
+            }
+
+            button {
+                display: none;
+            }
+            
+        }
     }
 }

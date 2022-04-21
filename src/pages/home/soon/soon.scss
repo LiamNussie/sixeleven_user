@@ -19,9 +19,14 @@
     .flex {
         display: flex;
         gap: 1.2rem;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
 
         .box {
-            flex: 1 1 365px;
+            flex: 1 0 365px;
             border-radius: 10px;
             height: 340px;
             border: 0.5px solid #03A1C6;
@@ -53,4 +58,17 @@
         }
     }
 
+}
+
+@media screen and (max-width: 480px) {
+    .soon {
+        padding: 4rem 1rem;
+
+        .flex {
+
+            .box {
+                flex:  1 0 300px;
+            }
+        }
+    }
 }

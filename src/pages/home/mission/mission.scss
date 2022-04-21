@@ -171,3 +171,24 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .mission {
+        padding: 2rem 1rem;
+
+        .flex1 {
+            flex-wrap: wrap;
+
+            .rightm {
+                align-items:baseline;
+            }
+        }
+        .flex2 {
+            flex-wrap: wrap-reverse;
+
+            .leftm {
+                align-items: baseline;
+            }
+        }
+    }
+}

@@ -3,6 +3,7 @@ import Logo from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import CustomModal from '../customModal/customModal';
 import { useState } from 'react';
+import Bars from './bars.svg'
 
 
 const WebHeader = () => {
@@ -21,6 +22,7 @@ const WebHeader = () => {
             </ul>
             <div className="right">
                 <button onClick={() => setShowModal(true)}>LOG IN</button>
+                <img src={Bars} alt="bars" />
             </div>
             {showModal && <CustomModal setShowModal={setShowModal} />}
         </div>

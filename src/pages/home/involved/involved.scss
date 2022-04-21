@@ -84,3 +84,13 @@
         }
     }
 }
+
+@media screen and (max-width: 480px) {
+    .involved {
+        padding: 4rem 1rem;
+
+        .flexi {
+            flex-wrap: wrap-reverse;
+        }
+    }
+}

@@ -17,7 +17,7 @@
             padding: 4rem;
 
             .bold {
-                width: 550px;
+                max-width: 550px;
                 font-size: 2.5rem;
                 color: #012028;
             }
@@ -73,5 +73,23 @@
         background-image: url(./heroimg.svg);
         background-size: cover;
         background-position: bottom;
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hero {
+        
+        .right {
+            display: none;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .hero {
+        .left {
+            .content {
+                padding: 1rem;
+            }
+        }
     }
 }

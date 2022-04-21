@@ -14,12 +14,13 @@
   .flexy {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
     .leftf {
       img {
         margin-bottom: 1rem;
       }
       .story {
-        width: 550px;
+        max-width: 550px;
         line-height: 24px;
         color: #414042;
       }
@@ -65,4 +66,12 @@
         }
     }
   }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+      padding: 3rem 1rem 2rem 1rem;
+
+  }
+     
 }
