@@ -92,3 +92,15 @@
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .apply {
+        .content {
+            padding: 1rem;
+
+            .sect {
+                padding: 0 1rem;
+            }
+        }
+    }
+}

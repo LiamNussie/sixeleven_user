@@ -102,3 +102,35 @@
     }
 }
 }
+
+@media screen and (max-width: 600px) {
+    .get-involved {
+
+        .herox {
+
+            .leftx {
+                height: 35vh;
+
+                .content {
+                    padding: 1rem;
+
+                    .bold {
+                        width: max-content;
+                    }
+                }
+
+            }
+            .rightx {
+                display: none;
+            }
+        }
+        .banner {
+            padding: 1rem;
+            
+            .bcont {
+               background-size: auto;
+            }
+        }
+    }
+    
+}

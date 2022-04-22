@@ -96,3 +96,20 @@
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .donation {
+        .cont {
+            padding: 2rem 1rem;
+
+            .flexo {
+                flex-wrap: wrap;
+                .left {
+                    .img {
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+}

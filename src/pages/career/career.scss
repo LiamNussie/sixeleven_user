@@ -116,7 +116,7 @@
             display: flex;
             gap: 2rem;
             margin-top: 4rem;
-            // flex-wrap: wrap;
+            flex-wrap: wrap;
             justify-content: space-between;
 
             .bax {
@@ -198,6 +198,48 @@
             background-image: url(./mega.svg);
             background-size: cover;
             background-repeat: no-repeat;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .careerp {
+        .herox {
+            flex-wrap: wrap;
+            .leftx {
+                height: 50vh;
+                .content {
+                    padding: 1rem;
+
+                    .bold {
+                        width: max-content;
+                    }
+                }
+            }
+            .rightx {
+                height: 50vh;
+                padding: 1rem;
+            }
+            .shift {
+                margin-top: -3rem;
+            }
+        }
+        .value {
+            padding: 4rem 1rem 1rem 1rem;
+        }
+        .jobs {
+            padding: 5rem 1rem 3rem 1rem;
+
+            .list {
+                .listing {
+                    .jtitle {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .bannerx {
+            padding: 1rem 0 6rem 0;
         }
     }
 }

@@ -27,7 +27,7 @@ const Career = () => {
                 <div className="leftx shift">
                     <div className="content">
                         <h3 className="bold">Join our team <br /> at <span style={{color: "#03A1C6"}}>Sixeleven</span></h3>
-                        <p className="para">Set yourself apart in your career and make <br /> a difference by working with us</p>
+                        <p className="para">Set yourself apart in your career and make a difference by working with us</p>
                     </div>
                 </div>
                 <div className="rightx">

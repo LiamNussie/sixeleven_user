@@ -177,3 +177,30 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .sec {
+        padding: 4rem 1rem;
+
+        .flex1 {
+            flex-wrap: wrap;
+
+            .rightm {
+                align-items: baseline;
+            }
+            .leftm {
+                height: 300px;
+            }
+        }
+        .flex2 {
+            flex-wrap: wrap-reverse;
+
+            .leftm {
+                align-items: baseline;
+            }
+            .rightm {
+                height: 300px;
+            }
+        }
+    }
+}

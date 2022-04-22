@@ -65,3 +65,25 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .about {
+        .heroa {
+            .cont {
+                padding: 1rem;
+                width: 100%;
+
+                .topt {
+                    width: 100%;
+                }
+                .parat {
+                    width: 100%;
+                }
+            }
+        }
+
+        .about-us {
+            padding: 4rem 1rem;
+        }
+    }
+}

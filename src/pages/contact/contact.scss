@@ -135,3 +135,27 @@
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    .contact {
+        .bottom {
+            padding: 2rem 1rem;
+            flex-wrap: wrap-reverse;
+
+            .left {
+                padding: 0 1rem;
+            }
+
+            .right {
+                form {
+                    padding: 1rem;
+                }
+            }
+        }
+        .nxt {
+            .about-usx {
+                padding: 2rem 1rem;
+            }
+        }
+    }
+}
