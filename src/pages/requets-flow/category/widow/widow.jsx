@@ -3,44 +3,63 @@ import states2 from "../../../../utils/statelga";
 import { Link } from "react-router-dom";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import './widow.scss'
+import axios from "axios";
+import baseUrl from "../../../../config";
+import { toast } from "react-toastify";
 
-const Widow = () => {
-    const [tempModel, setTempModel] = useState([]);
-    const [state, setState] = useState("");
-    const [lga, setLga] = useState("");
-    const [showP, setShowP] = useState(false);
+const Widow = ({data}) => {
+    console.log(data)
 
     const [name, setName] = useState("");
-    const [gender, setGender] = useState("");
-    const [dob, setDob] = useState("");
+    const [edu, setEdu] = useState("");
+    const [skill, setSkill] = useState("");
     const [phone, setPhone] = useState("");
-    const [address, setAddress] = useState("");
-    const [image, setImage] = useState("temp.png");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [cPassword, setCPassword] = useState("");
+    const [cert, setCert] = useState("temp.pdf");
+    const [reason, setReason] = useState("");
+    const [refTitle, setRefTitle] = useState("");
+    const [refRel, setRefRel] = useState("");
+    const [loading, setLoading] = useState(false)
 
-    const history = useHistory()
+    const history = useHistory();
+
+    data.educationLevel = edu;
+    data.skill = skill;
+    data.certification = cert;
+    data.reasonForAid = reason;
+    data.refereeName = name;
+    data.refereeTitle = refTitle;
+    data.refereeRelationship = refRel;
+    data.refereeNo = phone
+    
+
+    const datam = data
 
     
-    const selectState = (e) => {
-        setState(e.target.value);
-        setTempModel(states2.find((i) => i.state === e.target.value).lgas);
-      };
-      const selectLga = (e) => {
-        setLga(e.target.value);
-      };
+    
 
       
-      const handleSubmit = (e) => {
+      const handleSubmit = async (e) => {
         e.preventDefault();
-        // history.push("/request-aid/category", {data: data})
+        console.log(datam)
+        setLoading(true)
+        try {
+            const res = await axios.post(`${baseUrl}/user/register/widow`, datam)
+            console.log(res.data)
+            toast.success(res?.data?.message)
+            setLoading(false)
+            history.push("/")
+        } catch(error) {
+            console.log(error?.response?.data)
+            toast.error(error?.response?.data)
+            setLoading(false)
+        }
+        
     }
 
   return (
     <div className="widow">
         <div className="cont">
-                <Link to="/home" style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>Back</p></Link>
+                <Link to={{pathname:"/request-aid/category", state: {data: data}}} style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>Back</p></Link>
                 <div className="flexo">
                     <div className="left">
                         <div className="img"></div>
@@ -48,74 +67,59 @@ const Widow = () => {
                     <div className="right">
                         <p className="title">Widow Profile</p>
                         <p className="para">Hi there. Please provide these additional information below to create a profile with us</p>
-                        <form onSubmit={handleSubmit}>    
-                            <div className="input">.
-                                <label>Name <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setName(e.target.value)} placeholder='Full name' type="text" />
-                            </div>
+                        <form onSubmit={handleSubmit}>
                             <div className="input">
-                                <label>Gender <span style={{color: "crimson"}}>*</span></label><br />
-                                <select onChange={e => setGender(e.target.value)}>
-                                    <option selected disabled>Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
+                                <label>Your highest level of education <span style={{color: "crimson"}}>*</span></label><br />
+                                <select onChange={e => setEdu(e.target.value)}>
+                                    <option selected disabled>Select</option>
+                                    <option value="ssce">SSCE</option>
+                                    <option value="hnd">HND</option>
+                                    <option value="undergraduate">Undergraduate</option>
+                                    <option value="bachelors">Bachelor's</option>
+                                    <option value="masters">Master's</option>
                                 </select>
                             </div>
                             <div className="input">
-                                <label>D.O.B <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setDob(e.target.value)} type="date" />
+                                <label>Any skills you have (vocational/professional)</label><br />
+                                <input onChange={e => setSkill(e.target.value)} type="text" />
                             </div>
                             <div className="input">
-                                <label>Phone Number <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setPhone(e.target.value)} placeholder='phone' type="tel" />
+                                <label>Any certification ?</label><br />
+                                <input onChange={e => setCert(e.target.files[0])} type="file" />
+                            </div>
+                            <div className="input">
+                                <label>Why do you need this aid? <span style={{color: "crimson"}}>*</span></label><br />
+                                <textarea onChange={e => setReason(e.target.value)} cols="30" rows="5" placeholder="tell us why you need help "></textarea>
+                            </div>
+                            <div className="input">
+                                <label>Referee <span style={{color: "crimson"}}>*</span></label><br />
+                                <input onChange={e => setName(e.target.value)} placeholder='referee’s full name' type="text" />
+                            </div>
+                            <div className="input">
+                                <label>Referee’s Title <span style={{color: "crimson"}}>*</span></label><br />
+                                <select onChange={e => setRefTitle(e.target.value)}>
+                                    <option selected disabled>Select</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Miss">Miss</option>
+                                </select>
+                            </div>
+                            <div className="input">
+                                <label>Relationship with referee <span style={{color: "crimson"}}>*</span></label><br />
+                                <select onChange={e => setRefRel(e.target.value)}>
+                                    <option selected disabled>Select</option>
+                                    <option value="parent">Parent</option>
+                                    <option value="sibling">Sibling</option>
+                                    <option value="colleague">Colleague</option>
+                                    <option value="friend">Friend</option>
+                                </select>
+                            </div>
+                            <div className="input">
+                                <label>Referee’s Phone Number <span style={{color: "crimson"}}>*</span></label><br />
+                                <input onChange={e => setPhone(e.target.value)} type="tel" placeholder="referee's phone number" />
                             </div>
                             
-                            <div className="input">
-                                <label>State of residence <span style={{color: "crimson"}}>*</span></label><br />
-                                <select onChange={selectState}>
-                                    <option selected disabled>Select state</option>
-                                    {states2.map((i, index) => {
-                                        return (
-                                            <option key={index} value={i.state}>{i.state}</option>
-                                        )
-                                    })}
-                                </select>
-                            </div>
-                            <div className="input">
-                                <label>L.G.A <span style={{color: "crimson"}}>*</span></label><br />
-                                <select>
-                                    <option onChange={e => setLga(e.target.value)} selected disabled>Select LGA</option>
-                                    {tempModel.map((i, index) => {
-                                        return (
-                                            <option key={index} value={i}>{i}</option>
-                                        )
-                                    })}
-                                </select>
-                            </div>
-                            <div className="input">
-                                <label>Address <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setAddress(e.target.value)} type="text" />
-                            </div>
-                            <div className="input">
-                                <label>Upload your photo <span style={{color: "crimson"}}>*</span></label><br />
-                                <input type="file" />
-                            </div>
-                            <div className="input">
-                                <label>Email <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setEmail(e.target.value)} placeholder='email address' type="email" />
-                            </div>
-                            <div className="input">
-                                <label>Password <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setPassword(e.target.value)} type={showP ? "text" : "password"} />
-                                {showP ? <i onClick={() => setShowP(false)} className="fas fa-eye-slash"></i> : <i onClick={() => setShowP(true)} className='fas fa-eye'></i>}
-                            </div>
-                            <div className="input">
-                                <label>Confirm Password <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setCPassword(e.target.value)} type={showP ? "text" : "password"} />
-                                {showP ? <i onClick={() => setShowP(false)} className="fas fa-eye-slash"></i> : <i onClick={() => setShowP(true)} className='fas fa-eye'></i>}
-                            </div>
-                            
-                             <button type='submit'>NEXT</button>
+                             <button type='submit'>{loading ? "CREATING.." : "SUBMIT"}</button>
                         </form>
                     </div>
                 </div>

@@ -35,19 +35,27 @@ const RequestAid = () => {
       const data = {
           name,
           gender,
-          dob,
-          phone,
+          dateOfBirth: dob,
+          phoneNo: phone,
           address,
           image,
           email,
           password,
-          state,
-          lga
+          stateOfResidence: state,
+          localGovt: lga
       }
 
       const handleSubmit = (e) => {
           e.preventDefault();
           history.push("/request-aid/category", {data: data})
+      }
+
+      function SubmitBtn() {
+          if(name && gender && dob && phone && address && state && lga && image && email && password && password === cPassword) {
+              return (<button type='submit'>NEXT</button>)
+          } else {
+            return (<button disabled type='submit'>NEXT</button>)
+          }
       }
     
     return (
@@ -82,7 +90,7 @@ const RequestAid = () => {
                             </div>
                             <div className="input">
                                 <label>Phone Number <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setPhone(e.target.value)} placeholder='phone' type="tel" />
+                                <input minLength={11} maxLength={11} onChange={e => setPhone(e.target.value)} placeholder='phone' type="tel" />
                             </div>
                             
                             <div className="input">
@@ -98,8 +106,8 @@ const RequestAid = () => {
                             </div>
                             <div className="input">
                                 <label>L.G.A <span style={{color: "crimson"}}>*</span></label><br />
-                                <select>
-                                    <option onChange={e => setLga(e.target.value)} selected disabled>Select LGA</option>
+                                <select onChange={e => setLga(e.target.value)}>
+                                    <option selected disabled>Select LGA</option>
                                     {tempModel.map((i, index) => {
                                         return (
                                             <option key={index} value={i}>{i}</option>
@@ -113,7 +121,7 @@ const RequestAid = () => {
                             </div>
                             <div className="input">
                                 <label>Upload your photo <span style={{color: "crimson"}}>*</span></label><br />
-                                <input type="file" />
+                                <input onChange={e => setImage(e.target.files[0])} type="file" />
                             </div>
                             <div className="input">
                                 <label>Email <span style={{color: "crimson"}}>*</span></label><br />
@@ -128,9 +136,10 @@ const RequestAid = () => {
                                 <label>Confirm Password <span style={{color: "crimson"}}>*</span></label><br />
                                 <input onChange={e => setCPassword(e.target.value)} type={showP ? "text" : "password"} />
                                 {showP ? <i onClick={() => setShowP(false)} className="fas fa-eye-slash"></i> : <i onClick={() => setShowP(true)} className='fas fa-eye'></i>}
+                                {password.length && cPassword.length ? password !== cPassword && <p style={{color: "crimson", fontSize: ".8rem", marginTop: "7px"}}>Passwords do not match</p> : null}
                             </div>
                             
-                             <button type='submit'>NEXT</button>
+                             <SubmitBtn />
                         </form>
                     </div>
                 </div>

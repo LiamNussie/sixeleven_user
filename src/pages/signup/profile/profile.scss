@@ -111,3 +111,28 @@
     }
     
 }
+
+@media screen and (max-width: 1000px) {
+    .profilel {
+        .cont {
+            padding: 1rem;
+        }
+        .boxes {
+            flex-wrap: wrap;
+            .lefti {
+                .nav {
+                    flex-wrap: wrap;
+                    padding: 1rem .5rem .8rem .5rem;
+
+                    li {
+                        font-size: .8rem;
+                        width: max-content;
+                    }
+                }
+            }
+            .righti {
+                flex-grow: 1;
+            }
+        }
+    }
+}

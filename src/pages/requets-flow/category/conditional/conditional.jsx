@@ -10,7 +10,7 @@ const Conditional = (props) => {
     <div>
         <WebHeader />
 
-        {data?.category === "widow" ? <Widow /> : <StreetHawker />}
+        {data?.category === "widow" ? <Widow data={data} /> : <StreetHawker data={data} />}
     </div>
   )
 }

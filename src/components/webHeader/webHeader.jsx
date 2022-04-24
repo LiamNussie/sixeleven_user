@@ -3,12 +3,14 @@ import Logo from '../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import CustomModal from '../customModal/customModal';
 import { useState } from 'react';
-import Bars from './bars.svg'
+import Bars from './bars.svg';
+import SlideNav from '../slideNav/slideNav';
 
 
 const WebHeader = () => {
     
-    const [showModal, setShowModal] = useState(false)
+    const [showModal, setShowModal] = useState(false);
+    const [showNav, setShowNav] = useState(false);
 
     return (
         <div className="web-header">
@@ -22,9 +24,10 @@ const WebHeader = () => {
             </ul>
             <div className="right">
                 <button onClick={() => setShowModal(true)}>LOG IN</button>
-                <img src={Bars} alt="bars" />
+                {!showNav && <img onClick={e => setShowNav(true)} src={Bars} alt="bars" />}
             </div>
             {showModal && <CustomModal setShowModal={setShowModal} />}
+            {showNav && <SlideNav setShowNav={setShowNav} />}
         </div>
     )
 }

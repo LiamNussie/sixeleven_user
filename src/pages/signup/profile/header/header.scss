@@ -33,7 +33,10 @@
         }
     }
 
-    .right {
+    .rightx {
+        display: flex;
+
+        
 
         button {
           outline: none;
@@ -48,4 +51,22 @@
         }
 
     }
+    .bars {
+        display: none;
+    }
 }
+
+@media screen and (max-width: 700px) {
+    .header {
+        .middle {
+            display: none;
+        }
+        .rightx {
+            display: none;
+        }
+        .bars {
+            display: block;
+        }
+    }
+}
+

@@ -1,0 +1,94 @@
+.slide-nav {
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    z-index: 12;
+    height: 100vh;
+    animation: fadeIn 150ms linear 1;
+    background-color: rgba(0, 0, 0, 0.3);
+    .wrapper {
+        width: 100vw;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        position: relative;
+        .slider {
+            width: 35%;
+            // box-shadow: 0px 18px 36px #00000017;
+            background: #F5FBFD;
+            box-shadow: 0px 4px 8px rgba(65, 64, 66, 0.08);
+            // border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            padding: 1rem;
+            // transform: translate(-50%, -50%);
+
+            .top {
+                display: flex;
+                margin-top: 1.5rem;
+                justify-content: space-between;
+
+                .title {
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    padding-bottom: 2px;
+                    border-bottom: 2px solid #03A1C6;
+                }
+                img {
+                    cursor: pointer;
+                }
+            }
+            .links {
+                line-height: 4;
+                margin-top: 1rem;
+                margin-left: 2rem;
+
+                li {
+                    list-style: none;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: 250ms ease;
+                    
+                    &:hover {
+                        color: #03A1C6;
+                    }
+                }
+            }
+            button {
+                margin-top: 2rem;
+                outline: none;
+                border: none;
+                color: #fff;
+                border-radius: 6px;
+                padding: 12px 50px;
+                background: #03A1C6;
+                cursor: pointer;
+                font-weight: 600;
+                font-family: projFont;
+              }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slide-nav {
+        .wrapper {
+            .slider {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 551px) and (max-width: 700px) {
+    .slide-nav {
+        .wrapper {
+            .slider {
+                width: 50%;
+            }
+        }
+    }
+}

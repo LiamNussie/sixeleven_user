@@ -59,6 +59,10 @@
                         font-family: projFont;
                         // margin-top: 1rem;
                         transition: 250ms ease;
+
+                        &:disabled {
+                            background-color: #9ec6ff;
+                        }
     
                         &:hover {
                             background-color: #0084a2;
@@ -71,7 +75,7 @@
 
                         i {
                             position: absolute;
-                            top: 45%;
+                            top: 57%;
                             right: 3%;
                             color: #03A1C6;
                         }
@@ -96,6 +100,29 @@
                                 color: #848484;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .request-aid {
+        .cont {
+            padding: 2rem 1rem;
+
+            .flexo {
+                flex-wrap: wrap;
+
+                .left {
+                    .img {
+                        height: 200px;
+                    }
+                }
+                .right {
+                    .title {
+                        font-size: 1.7rem;
                     }
                 }
             }

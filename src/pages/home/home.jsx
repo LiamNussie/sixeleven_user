@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Footer from '../../components/footer/footer';
 import WebHeader from '../../components/webHeader/webHeader';
 import Hero from './hero/hero';
@@ -7,6 +8,7 @@ import Mission from './mission/mission';
 import Soon from './soon/soon';
 
 const Home = () => {
+
     return (
         <div className="home">
             <WebHeader />

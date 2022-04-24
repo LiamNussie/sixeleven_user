@@ -47,6 +47,7 @@
         .close {
           color: #03a1c6;
           font-weight: 600;
+          cursor: pointer;
         }
       }
       .bottom {
@@ -178,4 +179,25 @@
       }
     }
   }
+}
+
+@media screen and (max-width:840px) {
+    .custom {
+      .wrapper {
+        .modal {
+          width: 95%;
+
+          .top {
+            padding: .5rem 0;
+          }
+          .bottom {
+            padding: 0;
+
+            form {
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
 }

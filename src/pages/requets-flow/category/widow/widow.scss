@@ -102,3 +102,32 @@
        }
    }
 }
+
+@media screen and (max-width: "600px") {
+    .widow {
+        .cont {
+            padding: 2rem 1rem;
+
+            .flexo {
+                flex-wrap: wrap;
+                .left{
+                    .img {
+                        height: 200px;
+                    }
+                }
+                .right {
+                    .title {
+                        font-size: 1.7rem;
+                    }
+                    form {
+                        .input {
+                            label {
+                                font-size: .9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

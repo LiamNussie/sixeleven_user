@@ -26,7 +26,7 @@ const Category = (props) => {
             <WebHeader />
 
             <div className="cont">
-                <Link to="/home" style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>Back</p></Link>
+                <Link to="/request-aid" style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>Back</p></Link>
                 <div className="flexo">
                     <div className="left">
                         <div className="img"></div>
