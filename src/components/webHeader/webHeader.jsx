@@ -27,7 +27,7 @@ const WebHeader = () => {
                 {!showNav && <img onClick={e => setShowNav(true)} src={Bars} alt="bars" />}
             </div>
             {showModal && <CustomModal setShowModal={setShowModal} />}
-            {showNav && <SlideNav setShowNav={setShowNav} />}
+            {showNav && <SlideNav setShowNav={setShowNav} setShowModal={setShowModal} />}
         </div>
     )
 }

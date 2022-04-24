@@ -2,7 +2,7 @@ import './slideNav.scss';
 import Times from './times.svg';
 import { Link } from 'react-router-dom';
 
-const SlideNav = ({setShowNav}) => {
+const SlideNav = ({setShowNav, setShowModal}) => {
     
     return (
         <div className="slide-nav">
@@ -20,7 +20,7 @@ const SlideNav = ({setShowNav}) => {
                         <Link style={{textDecoration: "none", color: "#012028"}} onClick={() => setShowNav(false)} to="/career"><li>Careers</li></Link>
                         <Link style={{textDecoration: "none", color: "#012028"}} onClick={() => setShowNav(false)} to="/contact"><li>Contact</li></Link>
                     </ul>
-                    <button>Log In</button>
+                    <button onClick={() => {setShowNav(false); setShowModal(true)}}>Log In</button>
                 </div>
             </div>
         </div>

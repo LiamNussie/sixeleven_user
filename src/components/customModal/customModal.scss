@@ -1,4 +1,4 @@
-.custom {
+.customm {
   position: fixed;
   width: 100vw;
   left: 0;
@@ -8,14 +8,14 @@
   animation: fadeIn 150ms linear 1;
   background-color: rgba(0, 0, 0, 0.3);
 
-  .wrapper {
+  .wrapperm {
     width: 100vw;
     left: 0;
     top: 0;
     height: 100vh;
     position: relative;
 
-    .modal {
+    .modalm {
       width: 800px;
       box-shadow: 0px 18px 36px #00000017;
       background: #f9f9f9;
@@ -27,7 +27,7 @@
       padding: 1rem;
       transform: translate(-50%, -50%);
 
-      .top {
+      .topm {
         display: flex;
         justify-content: flex-end;
         padding: .5rem 1rem;
@@ -50,7 +50,7 @@
           cursor: pointer;
         }
       }
-      .bottom {
+      .bottomm {
           padding: 0 4rem;
           margin-top: 2rem;
 
@@ -182,15 +182,15 @@
 }
 
 @media screen and (max-width:840px) {
-    .custom {
-      .wrapper {
-        .modal {
+    .customm {
+      .wrapperm {
+        .modalm {
           width: 95%;
 
-          .top {
+          .topm {
             padding: .5rem 0;
           }
-          .bottom {
+          .bottomm {
             padding: 0;
 
             form {

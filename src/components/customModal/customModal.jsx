@@ -47,16 +47,16 @@ const CustomModal = ({setShowModal}) => {
     
 
     return (
-        <div className="custom">
-            <div className="wrapper">
-                <div className="modal">
-                    <div className="top">
+        <div className="customm">
+            <div className="wrapperm">
+                <div className="modalm">
+                    <div className="topm">
                          {/* <i className="fas-fa-times"></i> */}
                          {login ? <p onClick={() => setLogin(false)} className="backx"><i className="fas fa-arrow-left"></i>Back</p> : <p onClick={() => setShowModal(false)} className="close">close</p>}
                     </div>
-                    <div className="bottom">
+                    <div className="bottomm">
                         <p className="title">{login ? "Applicant Log in" : "Request aid"}</p>
-                        {!login && <p className="para">Select whether this is your first time applying or you’re a <br /> returning applicant</p>}
+                        {!login && <p className="para">Select whether this is your first time applying or you’re a returning applicant</p>}
                         {login ?
                           <form onSubmit={handleSubmit}>
                               <div className="input">
