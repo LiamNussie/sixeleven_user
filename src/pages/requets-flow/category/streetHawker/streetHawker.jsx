@@ -41,7 +41,7 @@ const StreetHawker = ({data}) => {
     
 
     const datam = data
-
+    const image = data.image
     
     
 
@@ -49,8 +49,20 @@ const StreetHawker = ({data}) => {
       const handleSubmit = async (e) => {
         e.preventDefault();
         console.log(datam)
+
+        const datamy = new FormData();
+        datamy.append("file", image);
+        datamy.append("upload_preset", "unopkl6y");
+        datamy.append("cloud_name", "sixeleven");
         setLoading(true)
+
         try {
+            const res = await axios.post(`https://api.cloudinary.com/v1_1/sixeleven/image/upload`, datamy)
+            console.log(res);
+
+            datam.image = res?.data?.url
+
+            try {
             const res = await axios.post(`${baseUrl}/user/register/street-hawker`, datam)
             console.log(res)
             setLoading(false)
@@ -58,8 +70,16 @@ const StreetHawker = ({data}) => {
             history.push("/")
         } catch(error) {
             console.log(error?.response?.data)
+            toast.error(error?.response?.data)
             setLoading(false)
         }
+        } catch (error) {
+            console.log(error?.response?.data?.message)
+            toast.error(error?.response?.data?.message)
+        }
+
+
+        
         // history.push("/request-aid/category", {data: data})
     }
 
@@ -116,7 +136,7 @@ const StreetHawker = ({data}) => {
                             </div> */}
                             <div className="input">
                                 <label>Upload your last result <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setCert(e.target.files[0])} type="file" />
+                                <input type="file" />
                             </div>
                             <div className="input">
                                 <label>Why do you need this aid? <span style={{color: "crimson"}}>*</span></label><br />
