@@ -34,7 +34,7 @@ const Reset2 = (props) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true)
+        setLoading(true);
 
         try {
             const res = await axios.post(`${baseUrl}/user/reset-password`, datax)
