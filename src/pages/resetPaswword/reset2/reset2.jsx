@@ -37,7 +37,7 @@ const Reset2 = (props) => {
         setLoading(true)
 
         try {
-            const res = await axios.post(`${baseUrl}/user/verify-code`, datax)
+            const res = await axios.post(`${baseUrl}/user/reset-password`, datax)
             console.log(res.data)
             toast.success(res?.data?.message)
             setLoading(false)
