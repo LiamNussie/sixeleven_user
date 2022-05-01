@@ -26,8 +26,6 @@ const Reset2 = (props) => {
     const resetToken = props.location.search;
     console.log(props)
 
-  
-
     const datax = {
         "newPassword": password,
         "confirmNewPassword": cPassword,
@@ -61,11 +59,11 @@ const Reset2 = (props) => {
                 <form onSubmit={handleSubmit}>
                     <div className="input">
                         <label>New Password</label><br />
-                        <input onChange={e => setPassword(e.target.value)} type="email" placeholder='Name@work.com' />
+                        <input onChange={e => setPassword(e.target.value)} type="text" placeholder='Name@work.com' />
                     </div>
                     <div className="input">
                         <label>Confirm New Password</label><br />
-                        <input onChange={e => setCPassword(e.target.value)} type="email" placeholder='Name@work.com' />
+                        <input onChange={e => setCPassword(e.target.value)} type="text" placeholder='Name@work.com' />
                     </div>
                     <button type='submit'>{loading ? "CONFIRMING..." : "CONFIRM EMAIL"}</button>
                 </form>
