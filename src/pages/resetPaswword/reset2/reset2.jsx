@@ -23,13 +23,15 @@ const Reset2 = (props) => {
     const dispatch = useDispatch();
     const history = useHistory();
 
-    const resetToken = props.match.params.resetToken;
+    const resetToken = props.location.search;
     console.log(props)
+
+  
 
     const datax = {
         "newPassword": password,
         "confirmNewPassword": cPassword,
-        "token": resetToken
+        "token": resetToken.substring(7)
     }
 
     const handleSubmit = async (e) => {
