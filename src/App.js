@@ -80,7 +80,7 @@ function App() {
         <Route exact path="/request-aid/category/create" component={Conditional} />
         <ProtectedRoute exact path="/user/dashboard" component={Profile} />
         <Route exact path="/reset" component={Reset} />
-        <Route exact path="/reset-password/:resetToken" component={Reset2} />
+        <Route exact path="/reset-password" component={Reset2} />
         <Route path="/" component={Home} />
       </Switch>
     </div>
