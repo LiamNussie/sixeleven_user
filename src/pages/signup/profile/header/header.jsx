@@ -24,7 +24,7 @@ const Header = () => {
             </ul>
             <div style={{ alignItems: "center", gap: "1.5rem"}} className="rightx">
                 <button onClick={() => setShowModal(true)}>REQUEST AID</button>
-                <p onClick={logout} style={{color: "crimson", fontWeight: "600"}}>LOG OUT</p>
+                <p onClick={logout} style={{color: "crimson", fontWeight: "600", cursor: "pointer"}}>LOG OUT</p>
                
             </div>
             <img className='bars' src={Bars} alt="bars" />
