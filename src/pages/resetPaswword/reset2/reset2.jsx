@@ -24,6 +24,7 @@ const Reset2 = (props) => {
     const history = useHistory();
 
     const resetToken = props.match.params.resetToken;
+    console.log(props)
 
     const datax = {
         "newPassword": password,
