@@ -1,5 +1,9 @@
+import axios from 'axios';
+import { useState } from 'react';
+import { toast } from 'react-toastify';
 import Footer from '../../components/footer/footer';
 import WebHeader from '../../components/webHeader/webHeader';
+import baseUrl from '../../config';
 import './contact.scss';
 import Fb from './fb.svg';
 import In from './in.svg';
@@ -7,6 +11,37 @@ import Ln from './ln.svg';
 import Tw from './tw.svg';
 
 const Contact = () => {
+    const [name, setName] = useState("");
+    const [phoneNo, setPhoneNo] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [loading, setLoading] = useState("");
+
+
+    const data = {
+        name,
+        phoneNo,
+        email,
+        message,
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setLoading(true);
+    
+        try {
+            const res = await axios.post(`${baseUrl}/user/contact`, data)
+            console.log(res.data)
+            toast.success(res?.data?.message)
+            setLoading(false)
+            window.location.reload()
+        } catch(error) {
+            console.log(error?.response?.data)
+            toast.error(error?.response?.data)
+            setLoading(false)
+        }
+      };
+
     return (
         <div className="contact">
             <WebHeader />
@@ -28,24 +63,24 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="right">
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <div className="input">
                             <label>Name</label><br />
-                            <input type="text" placeholder='' />
+                            <input onChange={e => setName(e.target.value)} type="text" placeholder='' />
                         </div>
                         <div className="input">
                             <label>Email Address</label><br />
-                            <input type="text" placeholder='' />
+                            <input onChange={e => setEmail(e.target.value)} type="text" placeholder='' />
                         </div>
                         <div className="input">
                             <label>Phone Number</label><br />
-                            <input type="text" placeholder='' />
+                            <input minLength={11} maxLength={11} onChange={e => setPhoneNo(e.target.value)} type="text" placeholder='' />
                         </div>
                         <div className="input">
                             <label>Message</label><br />
-                            <textarea placeholder='' name="" id="" cols="30" rows="7"></textarea>
+                            <textarea onChange={e => setMessage(e.target.value)} placeholder='' name="" id="" cols="30" rows="7"></textarea>
                         </div>
-                        <button>SUBMIT</button>
+                        <button type='submit'>{loading ? "SENDING..." : "SEND MESSAGE"}</button>
                     </form>
                 </div>
             </div>

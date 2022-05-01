@@ -11,10 +11,12 @@ import baseUrl from "../../../config";
 import { useSelector } from "react-redux";
 import Education2 from "./education2/education2";
 import Header from "./header/header";
+import Modal from "./customModal/customModal";
 
 const Profile = () => {
 
     const [page, setPage] = useState('history');
+    const [showModal, setShowModal] = useState(false)
     const currentUser = useSelector(({userData}) => userData.currentUser)
     const {name, request, image, gender, dateOfBirth, phoneNo, email, category, stateOfResidence, localGovt, address} = currentUser
     
@@ -152,7 +154,7 @@ const Profile = () => {
       </div>
       </div>
 
-      
+     
     </div>
   );
 };

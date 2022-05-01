@@ -3,6 +3,7 @@ import Logo from '../../../../assets/logo.svg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Bars from './bars.svg';
+import Modal from '../customModal/customModal';
 
 
 const Header = () => {
@@ -22,11 +23,13 @@ const Header = () => {
                 <li>APPLICANT'S PROFILE</li>
             </ul>
             <div style={{ alignItems: "center", gap: "1.5rem"}} className="rightx">
-                <Link to="/request-aid"><button>REQUEST AID</button></Link>
+                <button onClick={() => setShowModal(true)}>REQUEST AID</button>
                 <p onClick={logout} style={{color: "crimson", fontWeight: "600"}}>LOG OUT</p>
                
             </div>
             <img className='bars' src={Bars} alt="bars" />
+
+            {showModal && <Modal setShowModal={setShowModal} />}
         </div>
     )
 }

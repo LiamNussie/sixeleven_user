@@ -28,6 +28,8 @@ import RequestAid from './pages/requets-flow/requestAid/requestAid';
 import Profile from './pages/signup/profile/profile';
 import Category from './pages/requets-flow/category/category';
 import Conditional from './pages/requets-flow/category/conditional/conditional';
+import Reset from './pages/resetPaswword/reset';
+import Reset2 from './pages/resetPaswword/reset2/reset2';
 
 
 const state = store.getState();
@@ -77,6 +79,8 @@ function App() {
         <Route exact path="/request-aid/category" component={Category} />
         <Route exact path="/request-aid/category/create" component={Conditional} />
         <ProtectedRoute exact path="/user/dashboard" component={Profile} />
+        <Route exact path="/reset" component={Reset} />
+        <Route exact path="/reset-password/:resetToken" component={Reset2} />
         <Route path="/" component={Home} />
       </Switch>
     </div>

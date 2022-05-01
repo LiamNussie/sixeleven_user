@@ -34,7 +34,7 @@ const ViewListing = (props) => {
                 {loading ? <AppLoader /> : <div className="post">
                     <p className="jtitle">{job?.title} <span>{job?.employeeType}/{job?.workType}</span></p>
                     <p className="location">Location: <strong>{job?.location}</strong></p>
-                    <Link to="/posting-apply"><button>APPLY HERE!</button></Link>
+                    <Link to={{pathname: "/posting-apply", id: id}}><button>APPLY HERE!</button></Link>
 
                     <div className="role">
                         <p className="title">Role Description</p>
