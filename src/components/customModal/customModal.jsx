@@ -67,7 +67,7 @@ const CustomModal = ({setShowModal}) => {
                                 <label>Password</label><br />
                                 <input onChange={e => setPassword(e.target.value)} placeholder='enter password' type={showPassword ? "text" : "password"} />
                                 {showPassword ? <i onClick={() => setShowPassword(false)} className="fas fa-eye"></i> : <i onClick={() => setShowPassword(true)} className="fas fa-eye-slash"></i>}
-                                <Link to="/reset-password" style={{textDecoration: "none"}}><div className="forgot"><p>Forgot password?</p></div></Link>
+                                <Link to="/reset" style={{textDecoration: "none"}}><div className="forgot"><p>Forgot password?</p></div></Link>
                               </div>
                               <button type="submit" className="xx">{loading ? "LOGGING IN.." : "LOG IN"}</button>
                           </form>
