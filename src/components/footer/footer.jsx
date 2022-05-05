@@ -14,10 +14,10 @@ const Footer = () => {
                     <img src={Logo} alt="sixelevenlogo" />
                     <p className="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
                     <div className="icons">
-                        <img src={Fb} alt="fb" />
-                        <img src={In} alt="in" />
-                        <img src={Ln} alt="ln" />
-                        <img src={Tw} alt="tw" />
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Fb} alt="fb" /></a>
+                        <a href="http://instagram.com/611efoundation" target="_blank" rel="noopener noreferrer"><img src={In} alt="in" /></a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Ln} alt="ln" /></a>
+                        <a href="http://twitter.com/611efoundation" target="_blank" rel="noopener noreferrer"><img src={Tw} alt="tw" /></a>
                     </div>
                 </div>
                 <div className="rightf">

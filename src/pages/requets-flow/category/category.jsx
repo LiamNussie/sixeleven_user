@@ -38,7 +38,7 @@ const Category = (props) => {
                                 <label>Choose a category <span style={{color: "crimson"}}>*</span></label><br />
                                 <select onChange={e => setCategory(e.target.value)}>
                                     <option selected disabled>Select</option>
-                                    <option value="widow">Widow</option>
+                                    <option value="widow">Widow(er)</option>
                                     <option value="street hawker">Street Hawker</option>
                                 </select>
                             </div>

@@ -56,10 +56,10 @@ const Contact = () => {
                     <p className="phones">0812345678, 0708976543</p>
                     <p className="socials">Socials</p>
                     <div className="icons">
-                        <img src={Fb} alt="fb" />
-                        <img src={In} alt="in" />
-                        <img src={Ln} alt="ln" />
-                        <img src={Tw} alt="tw" />
+                    <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Fb} alt="fb" /></a>
+                        <a href="http://instagram.com/611efoundation" target="_blank" rel="noopener noreferrer"><img src={In} alt="in" /></a>
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Ln} alt="ln" /></a>
+                        <a href="http://twitter.com/611efoundation" target="_blank" rel="noopener noreferrer"><img src={Tw} alt="tw" /></a>
                     </div>
                 </div>
                 <div className="right">

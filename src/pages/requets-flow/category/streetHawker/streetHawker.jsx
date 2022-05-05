@@ -260,7 +260,7 @@ const StreetHawker = ({ data }) => {
                 <br />
                 <input
                   onChange={(e) => setPhone(e.target.value)}
-                  type="tel"
+                  type="email"
                   placeholder="referee's email"
                 />
               </div>

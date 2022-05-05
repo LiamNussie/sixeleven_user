@@ -57,7 +57,7 @@ const Donation = () => {
                             </div>
                             <div className="input">
                                 <label>Phone Number <span style={{color: "crimson"}}>*</span></label><br />
-                                <input minLength={11} maxLength={11} onChange={e => setPhone(e.target.value)} placeholder='phone' type="email" />
+                                <input minLength={11} maxLength={11} onChange={e => setPhone(e.target.value)} placeholder='phone' type="tel" />
                             </div>
                             <div className="input">
                                 <label>Email <span style={{color: "crimson"}}>*</span></label><br />
