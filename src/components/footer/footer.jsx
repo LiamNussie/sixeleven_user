@@ -12,7 +12,10 @@ const Footer = () => {
             <div className="flexy">
                 <div className="leftf">
                     <img src={Logo} alt="sixelevenlogo" />
-                    <p className="story">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
+                    <p className="story"><strong>SixEleven Empowerment Foundation (SEEF)</strong> is founded to support street hawkers to go back to school 
+and empower widow(er)s to maintain good standard of living.
+Our vision is to foster an unstoppable generation through education of young children and support to 
+the aged population.</p>
                     <div className="icons">
                         <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Fb} alt="fb" /></a>
                         <a href="http://instagram.com/611efoundation" target="_blank" rel="noopener noreferrer"><img src={In} alt="in" /></a>

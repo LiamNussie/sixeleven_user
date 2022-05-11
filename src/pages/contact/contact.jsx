@@ -51,9 +51,12 @@ const Contact = () => {
             <div className="bottom">
                 <div className="left">
                     <p className="titlec">Get in touch with us</p>
-                    <p className="it">Sixeleven Foundation</p>
-                    <p className="address">No 3, Eleven street, Kahan Road, Lagos</p>
+                    <p className="it"><strong>SixEleven Empowerment Foundation (SEEF)</strong></p>
+                    <p className="address">7, Prince Ibrahim Odofin Street, <br />
+Idado Peaceville Estate, Igbo-Efon Bus-Stop, Lekki, <br />
+Lagos, Nigeria</p>
                     <p className="phones">0812345678, 0708976543</p>
+                    <p className="phones">Email: sixefoundation@gmail.com; info@sixefoundation.org</p>
                     <p className="socials">Socials</p>
                     <div className="icons">
                     <a href="http://" target="_blank" rel="noopener noreferrer"><img src={Fb} alt="fb" /></a>

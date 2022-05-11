@@ -42,22 +42,28 @@ const Career = () => {
                     <div className="bax">
                         <img src={One} alt="icon" />
                         <p className="top"><strong>Organization Structure</strong></p>
-                        <p className="parae">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
+                        <p className="parae">Our foundation is strongly led by an experienced leader with years of experience from different 
+industries. Our values are our strengths and we have an enabling environment for people to grow and 
+help others grow.</p>
                     </div>
                     <div className="bax">
                         <img src={Two} alt="icon" />
                         <p className="top"><strong>Fast Growing Environment</strong></p>
-                        <p className="parae">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
+                        <p className="parae">We appreciate our little beginnings but do not lose focus on our goals. We celebrate every win as 
+journey along and this keep us growing in a speed of light.
+</p>
                     </div>
                     <div className="bax">
                         <img src={Three} alt="icon" />
                         <p className="top"><strong>Dedication & Reward</strong></p>
-                        <p className="parae">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
+                        <p className="parae">We are determined to succeed at everything we do. There is a reward for a job well done and review for 
+those with shortcomings</p>
                     </div>
                     <div className="bax">
                         <img src={Four} alt="icon" />
                         <p className="top"><strong>Opportunity to impact lives</strong></p>
-                        <p className="parae">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tortor lacus praesent ac vel nunc augue egestas at. </p>
+                        <p className="parae">What is the essence of living if not to make real impact? When you join us, you are not only working for 
+money but also impacting lives of millions directly or indirectly</p>
                     </div>
                 </div>
             </div>
