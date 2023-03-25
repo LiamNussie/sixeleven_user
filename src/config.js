@@ -1,3 +1,3 @@
-const baseUrl = "https://sixeleven.herokuapp.com/api"
+const baseUrl = "https://sixeleven-api.herokuapp.com/api"
 
 export default baseUrl;
