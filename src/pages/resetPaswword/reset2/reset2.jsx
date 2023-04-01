@@ -53,7 +53,7 @@ const Reset2 = (props) => {
             <WebHeader />
             <div className="main">
                 <h1>Reset your password</h1>
-                <p className="para">Enter your email address, and we will send you a code to reset your password</p>
+                {/* <p className="para">Enter your email address, and we will send you a code to reset your password</p> */}
 
                 <form onSubmit={handleSubmit}>
                     <div className="input">
@@ -64,7 +64,7 @@ const Reset2 = (props) => {
                         <label>Confirm New Password</label><br />
                         <input onChange={e => setCPassword(e.target.value)} type="text" placeholder='Name@work.com' />
                     </div>
-                    <button type='submit'>{loading ? "CONFIRMING..." : "CONFIRM EMAIL"}</button>
+                    <button type='submit'>{loading ? "CONFIRMING..." : "CHANGE PASSWORD"}</button>
                 </form>
                 <br /><br />
                 <Link to="/" style={{textDecoration: "none"}}><p className="back"><i className="fas fa-arrow-left"></i>back to log in</p></Link>
