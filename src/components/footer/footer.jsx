@@ -1,5 +1,5 @@
 import './footer.scss';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo.png';
 import Fb from './fb.svg';
 import In from './in.svg';
 import Ln from './ln.svg';
@@ -11,7 +11,7 @@ const Footer = () => {
         <div className="footer">
             <div className="flexy">
                 <div className="leftf">
-                    <img src={Logo} alt="sixelevenlogo" />
+                    <img className='logo' src={Logo} alt="sixelevenlogo" />
                     <p className="story"><strong>SixEleven Empowerment Foundation (SEEF)</strong> is founded to support street hawkers to go back to school 
 and empower widow(er)s to maintain good standard of living.
 Our vision is to foster an unstoppable generation through education of young children and support to 

@@ -74,7 +74,7 @@ const RequestAid = () => {
                         <form onSubmit={handleSubmit}>    
                             <div className="input">.
                                 <label>Name <span style={{color: "crimson"}}>*</span></label><br />
-                                <input onChange={e => setName(e.target.value)} placeholder='Full name' type="text" />
+                                <input onChange={e => setName(e.target.value)} placeholder='Full name (Surname comes first)' type="text" />
                             </div>
                             <div className="input">
                                 <label>Gender <span style={{color: "crimson"}}>*</span></label><br />

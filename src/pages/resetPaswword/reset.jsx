@@ -36,7 +36,7 @@ const Reset = () => {
             console.log(res.data)
             toast.success(res?.data?.message)
             setLoading(false)
-            window.location.reload()
+            // window.location.reload()
         } catch(error) {
             console.log(error?.response?.data)
             toast.error(error?.response?.data)

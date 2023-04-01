@@ -1,5 +1,5 @@
 import './webHeader.scss';
-import Logo from '../../assets/logo.svg';
+import Logo from '../../assets/logo.png';
 import { Link } from 'react-router-dom';
 import CustomModal from '../customModal/customModal';
 import { useState } from 'react';

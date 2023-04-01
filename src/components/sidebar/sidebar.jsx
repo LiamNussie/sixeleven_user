@@ -1,5 +1,5 @@
 import "./sidebar.scss";
-import Logo from "../../assets/logo.svg";
+import Logo from "../../assets/logo.png";
 import Home from "../../assets/homeicon.svg";
 import Mail from "../../assets/mailicon.svg";
 import Cash from "../../assets/cashicon.svg";

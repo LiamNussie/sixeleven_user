@@ -87,6 +87,9 @@ const Widow = ({data}) => {
                                 <label>Your highest level of education <span style={{color: "crimson"}}>*</span></label><br />
                                 <select onChange={e => setEdu(e.target.value)}>
                                     <option selected disabled>Select</option>
+                                    <option value="no education">No Education</option>
+                                    <option value="primary school">Primary School</option>
+                                    <option value="secondary school">Secondary School</option>
                                     <option value="ssce">SSCE</option>
                                     <option value="hnd">HND</option>
                                     <option value="undergraduate">Undergraduate</option>

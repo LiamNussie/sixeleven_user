@@ -138,7 +138,9 @@ const StreetHawker = ({ data }) => {
                   <option selected disabled>
                     Select
                   </option>
-                  <option value="ssce">SSCE</option>
+                  <option value="no education">No Education</option>
+                  <option value="primary school">Primary School</option>
+                  <option value="secondary school">Secondary School</option>
                   <option value="hnd">HND</option>
                   <option value="undergraduate">Undergraduate</option>
                   <option value="bachelors">Bachelor's</option>

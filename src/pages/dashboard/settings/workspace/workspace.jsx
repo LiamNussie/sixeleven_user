@@ -1,7 +1,7 @@
 import "./workspace.scss";
 import { useSelector } from "react-redux";
 import { useState } from "react";
-import Logo from '../../../../assets/logo.svg';
+import Logo from '../../../../assets/logo.png';
 import { toast } from "react-toastify";
 import axios from "axios";
 import baseUrl from "../../../../config";
@@ -51,7 +51,7 @@ const Workspace = () => {
                 <br />
                 <label>Organization Logo</label>
                 <div className="imgx">
-                    <img src={Logo} alt="sixeleven logo" />
+                    <img style={{width: "250px"}} src={Logo} alt="sixeleven logo" />
                     <div className="inputx">
                         <div className="box">
                                 <p>Click to select file</p>
