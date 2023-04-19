@@ -49,7 +49,7 @@ const Reset = () => {
             <WebHeader />
             <div className="main">
                 <h1>Reset your password</h1>
-                <p className="para">Enter your email address, and we will send you a code to reset your password</p>
+                <p className="para">Enter your email address, and we will send you a password reset link.</p>
 
                 <form onSubmit={handleSubmit}>
                     <div className="input">

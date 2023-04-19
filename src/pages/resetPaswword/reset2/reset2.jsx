@@ -58,11 +58,11 @@ const Reset2 = (props) => {
                 <form onSubmit={handleSubmit}>
                     <div className="input">
                         <label>New Password</label><br />
-                        <input onChange={e => setPassword(e.target.value)} type="text" placeholder='Name@work.com' />
+                        <input onChange={e => setPassword(e.target.value)} type="text" />
                     </div>
                     <div className="input">
                         <label>Confirm New Password</label><br />
-                        <input onChange={e => setCPassword(e.target.value)} type="text" placeholder='Name@work.com' />
+                        <input onChange={e => setCPassword(e.target.value)} type="text" />
                     </div>
                     <button type='submit'>{loading ? "CONFIRMING..." : "CHANGE PASSWORD"}</button>
                 </form>
