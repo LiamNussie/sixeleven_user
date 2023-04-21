@@ -7,7 +7,8 @@ const Payment = ({data}) => {
     referenceDate: new Date().getTime().toString(),
     email: data?.email,
     amount: data?.amount * 100,
-    publicKey: "pk_test_55383050203f3c68405b6cdd9d5a8c8629e8c93f",
+    publicKey: "pk_test_51eac684286c77364fd33c2db939cc66dccdcb70",
+    // publicKey: "pk_test_55383050203f3c68405b6cdd9d5a8c8629e8c93f",
   };
 
   
