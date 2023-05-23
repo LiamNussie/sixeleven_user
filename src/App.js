@@ -64,6 +64,7 @@ function App() {
 
   return (
     <div className="App">
+      {elements}
       <ToastContainer position="top-center" />
       <Switch>
         <Route exact path="/about" component={About} />
